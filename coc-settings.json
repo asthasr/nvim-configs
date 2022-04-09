@@ -1,0 +1,34 @@
+{
+  "diagnostic.checkCurrentLine": true,
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "cabal.project",
+        "stack.yaml",
+        "hie.yaml",
+        ".hie-bios",
+        "BUILD.bazel",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": ["hs", "lhs", "haskell", "lhaskell"]
+    },
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "trace.server": "verbose",
+      "filetypes": ["tf", "terraform"],
+      "initializationOptions": {}
+    }
+  },
+  "python.formatting.provider": "black",
+  "python.jediEnabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.setLinter": ["mypy"],
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+  "coc.preferences.formatOnSaveFiletypes": ["json", "rust", "python"]
+}
