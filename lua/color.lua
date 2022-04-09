@@ -1,4 +1,5 @@
-vim.cmd'colorscheme nord'
+--vim.cmd'colorscheme nord'
+vim.cmd'colorscheme zenburn'
 
 vim.cmd'highlight Comment gui=italic'
 

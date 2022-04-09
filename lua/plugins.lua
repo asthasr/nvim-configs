@@ -14,8 +14,9 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-  use 'flazz/vim-colorschemes'
+  -- use 'flazz/vim-colorschemes'
   use 'folke/tokyonight.nvim'
+  use { 'phha/zenburn.vim', config = function() require('zenburn').setup() end }
 
   use 'justinmk/vim-sneak'
   use 'tpope/vim-fugitive'
