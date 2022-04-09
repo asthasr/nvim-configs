@@ -1,5 +1,6 @@
 local o = vim.opt
 local a = vim.api
+local g = vim.g
 
 ---- Indentation and tabs ------------------------------------------------------
 o.expandtab = true
@@ -29,5 +30,9 @@ a.nvim_set_keymap('n', '<leader>bp', ':bprev<cr>', { silent = true })
 -- Escape from insert mode without pressing escape
 a.nvim_set_keymap('i', 'jj', '<Esc>`^', { silent = true, noremap = true })
 
-
+-- Load snippets
 require("luasnip.loaders.from_snipmate").lazy_load()
+
+---- External Utilities --------------------------------------------------------
+o.grepprg = "rg --color=never"
+g.python3_host_prog = "/home/blake/.local/share/nvim/python3-venv/bin/python"
