@@ -28,3 +28,6 @@ a.nvim_set_keymap('n', '<leader>bp', ':bprev<cr>', { silent = true })
 
 -- Escape from insert mode without pressing escape
 a.nvim_set_keymap('i', 'jj', '<Esc>`^', { silent = true, noremap = true })
+
+
+require("luasnip.loaders.from_snipmate").lazy_load()

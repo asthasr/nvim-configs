@@ -1,0 +1,13 @@
+snippet dcla Dataclass skeleton
+	@dataclass
+	class ${1:class_name}:
+		"""${0:description}"""
+
+snippet dcli Dataclass import
+	from dataclasses import dataclass, field
+
+snippet imp Import a module
+	import ${0:module}
+
+snippet from Import parts of a module
+	from ${1:package} import ${0:module}
