@@ -1,11 +1,12 @@
 local lspconfig = require('lspconfig')
+local home = os.getenv("HOME")
 
 lspconfig.sumneko_lua.setup({
   settings = {
     cmd = {
-      "/home/blake/.local/bin/lua-language-server",
+      home .. "/.local/bin/lua-language-server",
       "-E",
-      "/home/blake/.local/bin/lls/main.lua",
+      home .. "/.local/bin/lls/main.lua",
     },
     Lua = {
       diagnostics = {

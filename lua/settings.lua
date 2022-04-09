@@ -2,6 +2,8 @@ local o = vim.opt
 local a = vim.api
 local g = vim.g
 
+local home = os.getenv("HOME")
+
 ---- Indentation and tabs ------------------------------------------------------
 o.expandtab = true
 o.shiftround = true
@@ -35,4 +37,4 @@ require("luasnip.loaders.from_snipmate").lazy_load()
 
 ---- External Utilities --------------------------------------------------------
 o.grepprg = "rg --color=never"
-g.python3_host_prog = "/home/blake/.local/share/nvim/python3-venv/bin/python"
+g.python3_host_prog = home .. "/.local/share/nvim/python3-venv/bin/python"
