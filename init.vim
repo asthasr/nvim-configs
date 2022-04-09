@@ -10,11 +10,8 @@ lua require('settings')
 lua require('search')
 lua require('treesitter')
 
-inoremap jj <Esc>`^
-
 " Prefer ripgrep over the stock grep
 set grepprg=rg\ --color=never
-"let g:markdown_fenced_languages = ['python', 'haskell', 'scheme', 'yaml', 'toml']
 
 " Python
 let g:python3_host_prog = '/home/blake/.local/share/nvim/python3-venv/bin/python'
