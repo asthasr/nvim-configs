@@ -13,10 +13,17 @@ return require('packer').startup(function(use)
 
   use 'neovim/nvim-lspconfig'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use {
+    'folke/trouble.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('trouble').setup()
+    end
+  }
 
   -- use 'flazz/vim-colorschemes'
   use 'folke/tokyonight.nvim'
-  use { 'phha/zenburn.vim', config = function() require('zenburn').setup() end }
+  use { 'phha/zenburn.nvim', config = function() require('zenburn').setup() end }
 
   use 'justinmk/vim-sneak'
   use 'tpope/vim-fugitive'
@@ -31,7 +38,10 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  use 'junegunn/limelight.vim'
   use 'junegunn/goyo.vim'
+  use 'preservim/vim-pencil'
+
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
 

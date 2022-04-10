@@ -1,0 +1,15 @@
+snippet sqls SELECT statement
+	SELECT ${1:columns}
+	FROM ${2:table} ${0:alias}
+
+snippet sqlj JOIN clause
+	JOIN ${1:table} ${2:alias} ON ${0:condition}
+
+snippet sqlw WHERE clause
+	WHERE ${0:condition}
+
+snippet sqlg GROUP BY clause
+	GROUP BY ${0:columns}
+
+snippet sqlh HAVING clause
+	HAVING ${0:condition}
