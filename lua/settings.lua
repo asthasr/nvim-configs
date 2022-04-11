@@ -42,4 +42,4 @@ o.grepprg = "rg --color=never"
 
 
 ---- Writing Mode --------------------------------------------------------------
-vim.cmd'command! Write lua require("write_mode").write()'
+vim.cmd'command! Write lua require("write").write()'
