@@ -88,7 +88,7 @@ cmp.setup.cmdline(':', {
 -- local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-for _, lsp in ipairs({"gopls", "hls", "rust_analyzer", "pyright"}) do
+for _, lsp in ipairs({"gopls", "hls", "rust_analyzer", "pyright", "ocamllsp"}) do
   require('lspconfig')[lsp].setup {
     capabilities = capabilities
   }

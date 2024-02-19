@@ -4,8 +4,10 @@ require('plugins')
 require('cmp_config')
 require('lsp_config')
 
-require('color')
 require('settings')
+require('telescope_settings')
 
 require('search')
 require('treesitter')
+
+require('color')
