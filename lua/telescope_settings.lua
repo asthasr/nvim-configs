@@ -19,8 +19,12 @@ require("telescope").setup {
       --      do the following
       --   codeactions = false,
       -- }
+    },
+    file_browser = {
+      hijack_netrw = true
     }
   }
 }
 
 require("telescope").load_extension("ui-select")
+require("telescope").load_extension("file_browser")

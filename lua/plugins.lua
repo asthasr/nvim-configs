@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  use 'jpalardy/vim-slime'
+  use 'wlangstroth/vim-racket'
+
   use 'junegunn/limelight.vim'
   use 'junegunn/goyo.vim'
   use 'preservim/vim-pencil'
@@ -55,6 +58,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
   use 'nvim-telescope/telescope-ui-select.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
 
   if packer_bootstrap then
     require('packer').sync()
